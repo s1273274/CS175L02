@@ -2,6 +2,7 @@ package CarCostCalculationVersion2;
 
 import org.w3c.dom.ls.LSParserFilter;
 
+import javax.swing.*;
 import java.util.Scanner;
 
 public class CarCostCalculationVersion2 {
@@ -54,6 +55,11 @@ public class CarCostCalculationVersion2 {
         System.out.println("Cost to own " +CarModelReg + " After Year 3 is " + Year3Reg + " for " + CarModelHyb + ": " + Year3Hyb);
         System.out.println("Cost to own " +CarModelReg + " After Year 4 is " + Year4Reg + " for " + CarModelHyb + ": " + Year4Hyb);
         System.out.println("Cost to own " +CarModelReg + " After Year 5 is " + Year5Reg + " for " + CarModelHyb + ": " + Year5Hyb);
+
+        if (Year5Hyb < Year5Reg)
+        System.out.println("The Toyota Prius pays back after 5 years ");
+        else
+        System.out.println("The Toyota Prius does'nt pay back after 5 years");
 
 
 
