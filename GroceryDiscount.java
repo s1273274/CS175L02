@@ -20,14 +20,17 @@ public class GroceryDiscount {
         final double Rate3_Limit = 150;
         final double Rate4_Limit = 210;
         double discount = 0;
+        double bill;
 
         while (program = true) {
 
+
             System.out.println("please enter the cost of your groceries or '0' to quit ");
-            double bill = scan.nextDouble();
+            bill = scan.nextDouble();
             if (bill == 0) {
                 break;
-            }
+
+                }
             else if (bill < 10) {
                 System.out.println("You are not eligible for coupon this time ");
             }
@@ -57,6 +60,10 @@ public class GroceryDiscount {
 
         //System.out.println("Please enter the cost of your groceries or '0' to quit " );
         //double cost = scan.nextDouble();
+
+        //if ( bill <10 || bill > 1000) {
+        //                System.out.println("Between range 10 and 1000");
+        //            }
 
 
 
