@@ -1,4 +1,4 @@
-package GroceryDiscount2;
+package GroceryDiscount;
 
 import java.util.Scanner;
 
@@ -22,21 +22,15 @@ public class GroceryDiscount {
         double discount = 0;
         double bill;
 
-        System.out.println("please enter the cost of your groceries or '0' to quit ");
+        while (program = true) {
 
-        while (scan.hasNextDouble()) {
 
+            System.out.println("please enter the cost of your groceries or '0' to quit ");
             bill = scan.nextDouble();
+            if (bill == 0) {
+                break;
 
-
-
-        if (bill == 0)  {
-            break;
-
-            }
-            else if (bill < 10 || bill > 1000) {
-                System.out.println("Make sure the cost is between 10 and 10000");
-            }
+                }
             else if (bill < 10) {
                 System.out.println("You are not eligible for coupon this time ");
             }
@@ -56,11 +50,50 @@ public class GroceryDiscount {
                 discount = bill * Rate4;
                 System.out.println("You win a discount of $" + discount + "(14 percent of your purchase)");
             }
-
-
-
-            }
-
         }
 
+
+
+
+
+
+
+        //System.out.println("Please enter the cost of your groceries or '0' to quit " );
+        //double cost = scan.nextDouble();
+
+        //if ( bill <10 || bill > 1000) {
+        //                System.out.println("Between range 10 and 1000");
+        //            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
+}
