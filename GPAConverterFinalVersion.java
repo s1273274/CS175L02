@@ -17,6 +17,7 @@ public class GPAConverterFinalVersion {
 
         String Courselist = null;
         String Courseinfo = null;
+        double Grade = 0;
 
         System.out.println("Enter the amount of classes you need to enter: ");
         int amount = scan.nextInt();
@@ -24,7 +25,7 @@ public class GPAConverterFinalVersion {
 
             System.out.println("Enter the course information (Title,Credit hours,Letter grade (grade can be followed by + or -), or enter Q to quit: ");
 
-            while (scan.hasNext()) {
+
 
                 Courseinfo = scan.next();
 
@@ -33,62 +34,107 @@ public class GPAConverterFinalVersion {
                 }
                 String[] data = Courseinfo.split(",");
                 String info = data[0];
-                int hours = Integer.parseInt(data[1]);
+                String hours = (data[1]);
                 String grade = data[2];
-
-                Credit = hours;
-                Courselist = info;
-                Totalcredit += hours;
+                int credit = Integer.parseInt(hours);
 
 
-                System.out.println("Course: " + Courselist);
-                System.out.println("Credits: " + Credit + " (" + Totalcredit + " total)");
+                //Courselist = info;
+
+
+
+                //System.out.println("Course: " + Courselist);
+                //System.out.println("Credits: " + Credit + " (" + Totalcredit + " total)");
 
 
                 if (grade.equals("A") || grade.equals("A+")) {
                     numberGrade = 4.0;
-                    finalGPA += numberGrade;
+                    Grade = numberGrade * credit;
+                    finalGPA += Grade;
+                    Totalcredit += credit;
                     System.out.println("The numeric value is: " + numberGrade + " (" + finalGPA + " total)");
+                    System.out.println("Credits: " + credit + " (" + Totalcredit + " total)");
+                    System.out.println("Course " + info + " credits " + credit + " Grade " + grade + " Grade Point " + Grade);
                 } else if (grade.equals("A-")) {
                     numberGrade = 3.7;
-                    finalGPA += numberGrade;
+                    Grade = numberGrade * credit;
+                    finalGPA += Grade;
+                    Totalcredit += credit;
                     System.out.println("The numeric value is: " + numberGrade + " (" + finalGPA + " total)");
+                    System.out.println("Credits: " + credit + " (" + Totalcredit + " total)");
+                    System.out.println("Course " + info + " credits " + credit + " Grade " + grade + " Grade Point " + Grade);
                 } else if (grade.equals("B+")) {
                     numberGrade = 3.3;
-                    finalGPA += numberGrade;
+                    Grade = numberGrade * credit;
+                    finalGPA += Grade;
+                    Totalcredit += credit;
                     System.out.println("The numeric value is: " + numberGrade + " (" + finalGPA + " total)");
+                    System.out.println("Credits: " + credit + " (" + Totalcredit + " total)");
+                    System.out.println("Course " + info + " credits " + credit + " Grade " + grade + " Grade Point " + Grade);
                 } else if (grade.equals("B")) {
                     numberGrade = 3.0;
-                    finalGPA += numberGrade;
+                    Grade = numberGrade * credit;
+                    finalGPA += Grade;
+                    Totalcredit += credit;
                     System.out.println("The numeric value is: " + numberGrade + " (" + finalGPA + " total)");
+                    System.out.println("Credits: " + credit + " (" + Totalcredit + " total)");
+                    System.out.println("Course " + info + " credits " + credit + " Grade " + grade + " Grade Point " + Grade);
                 } else if (grade.equals("B-")) {
                     numberGrade = 2.7;
-                    finalGPA += numberGrade;
+                    Grade = numberGrade * credit;
+                    finalGPA += Grade;
+                    Totalcredit += credit;
                     System.out.println("The numeric value is: " + numberGrade + " (" + finalGPA + " total)");
+                    System.out.println("Credits: " + credit + " (" + Totalcredit + " total)");
+                    System.out.println("Course " + info + " credits " + credit + " Grade " + grade + " Grade Point " + Grade);
                 } else if (grade.equals("C+")) {
                     numberGrade = 2.3;
-                    finalGPA += numberGrade;
+                    Grade = numberGrade * credit;
+                    finalGPA += Grade;
+                    Totalcredit += credit;
                     System.out.println("The numeric value is: " + numberGrade + " (" + finalGPA + " total)");
+                    System.out.println("Credits: " + credit + " (" + Totalcredit + " total)");
+                    System.out.println("Course " + info + " credits " + credit + " Grade " + grade + " Grade Point " + Grade);
                 } else if (grade.equals("C")) {
                     numberGrade = 2.0;
-                    finalGPA += numberGrade;
+                    Grade = numberGrade * credit;
+                    finalGPA += Grade;
+                    Totalcredit += credit;
                     System.out.println("The numeric value is: " + numberGrade + " (" + finalGPA + " total)");
+                    System.out.println("Credits: " + credit + " (" + Totalcredit + " total)");
+                    System.out.println("Course " + info + " credits " + credit + " Grade " + grade + " Grade Point " + Grade);
                 } else if (grade.equals("C-")) {
                     numberGrade = 1.7;
-                    finalGPA += numberGrade;
+                    Grade = numberGrade * credit;
+                    finalGPA += Grade;
+                    Totalcredit += credit;
                     System.out.println("The numeric value is: " + numberGrade + " (" + finalGPA + " total)");
+                    System.out.println("Credits: " + credit + " (" + Totalcredit + " total)");
+                    System.out.println("Course " + info + " credits " + credit + " Grade " + grade + " Grade Point " + Grade);
                 } else if (grade.equals("D+")) {
                     numberGrade = 1.3;
-                    finalGPA += numberGrade;
+                    Grade = numberGrade * credit;
+                    finalGPA += Grade;
+                    Totalcredit += credit;
                     System.out.println("The numeric value is: " + numberGrade + " (" + finalGPA + " total)");
+                    System.out.println("Credits: " + credit + " (" + Totalcredit + " total)");
+                    System.out.println("Course " + info + " credits " + credit + " Grade " + grade + " Grade Point " + Grade);
                 } else if (grade.equals("D")) {
                     numberGrade = 1.0;
-                    finalGPA += numberGrade;
+                    Grade = numberGrade * credit;
+                    finalGPA += Grade;
+                    Totalcredit += credit;
                     System.out.println("The numeric value is: " + numberGrade + " (" + finalGPA + " total)");
+                    System.out.println("Credits: " + credit + " (" + Totalcredit + " total)");
+                    System.out.println("Course " + info + " credits " + credit + " Grade " + grade + " Grade Point " + Grade);
                 } else if (grade.equals("F")) {
                     numberGrade = 0;
-                    finalGPA += numberGrade;
-                    System.out.println("The numeric value is: " + numberGrade + " (" + finalGPA + " total)");
+                    Grade = numberGrade * credit;
+                    finalGPA += Grade;
+                    Totalcredit += credit;
+                    System.out.println("The numeric value is: " + numberGrade + " (" + finalGPA + " total )");
+                    System.out.println("Credits: " + Credit + " (" + Totalcredit + " total)");
+                    System.out.println("Course " + info + " credits " + credit + " Grade " + grade + " Grade Point " + Grade);
                 } else {
                     System.out.println("Invalid Letter Grade");
 
@@ -96,17 +142,17 @@ public class GPAConverterFinalVersion {
 
             }
             double gradePoints = Credit*numberGrade;
-            Totalcredit = Credit+Totalcredit;
-            TotalPoints = gradePoints + TotalPoints;
-            GPA = TotalPoints/Totalcredit;
-            System.out.println("Course " + Courseinfo + "credits" + Credit + "Grade" + gradePoints);
+
+            GPA = finalGPA/Totalcredit;
+
+            System.out.println("your gpa is " + GPA);
 
         }
-        System.out.println(GPA);
+
 
 
     }
-}
+
 
 
 
